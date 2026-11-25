@@ -671,7 +671,7 @@ export default function WbcPage() {
                 EVENT DETAILS
               </p>
 
-              <h2 className="mt-3 text-[36px] sm:text-[46px] md:text-[52px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[620px]">
+              <h2 className="mt-3 text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[620px]">
                 One Saturday in Akure, set aside for your money
               </h2>
 
@@ -784,7 +784,7 @@ export default function WbcPage() {
       >
         <div className="mx-auto max-w-[760px] text-center">
           <Reveal>
-            <h2 className="text-[34px] sm:text-[44px] md:text-[50px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
+            <h2 className="text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
               Join the Wealthconomy
               <span className="block">community.</span>
             </h2>
@@ -816,7 +816,7 @@ export default function WbcPage() {
       >
         <div className="mx-auto max-w-[800px]">
           <Reveal>
-            <h2 className="text-center text-[34px] sm:text-[44px] md:text-[50px] font-extrabold leading-[1.1] tracking-[-0.035em] text-[#0E4547]">
+            <h2 className="text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
               Frequently asked questions
             </h2>
           </Reveal>
@@ -837,7 +837,7 @@ export default function WbcPage() {
           <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-14">
             {/* Left Content */}
             <Reveal className="max-w-[760px]">
-              <h2 className="text-[36px] sm:text-[46px] md:text-[54px] lg:text-[60px] font-extrabold leading-[1.02] tracking-[-0.04em] text-[#0E4547]">
+              <h2 className="text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
                 Save your free seat at the
                 <span className="block">Wealth Builders Conference</span>
               </h2>
