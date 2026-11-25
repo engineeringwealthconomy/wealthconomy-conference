@@ -55,7 +55,7 @@ export function Navbar({ navLinks, registrationUrl }: NavbarProps) {
         <img
           src="/wealthconomy-logo-new.png"
           alt="Wealthconomy"
-          className="h-[30px] sm:h-[36px] w-auto object-contain brightness-0 invert"
+          className="h-[40px] sm:h-[46px] lg:h-[50px] w-auto object-contain brightness-0 invert"
         />
       </a>
 
@@ -80,28 +80,19 @@ export function Navbar({ navLinks, registrationUrl }: NavbarProps) {
         </a>
       </nav>
 
-      {/* Mobile Controls: Quick Register Button + Hamburger Icon Button */}
-      <div className="flex items-center gap-2.5 sm:gap-3 lg:hidden">
-        <a
-          href={registrationUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full bg-[#f8c860] px-3.5 py-2 sm:px-5 sm:py-2.5 text-[12px] sm:text-[13px] font-bold text-[#0E4547] transition hover:bg-[#ffd768] active:scale-95"
-        >
-          Register free
-        </a>
-
+      {/* Mobile Hamburger Menu Button */}
+      <div className="flex items-center lg:hidden">
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-expanded={isOpen}
           aria-label={isOpen ? "Close menu" : "Open navigation menu"}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#f8c860] active:scale-95"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-[#f8c860] active:scale-95"
         >
           {isOpen ? (
-            <X className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+            <X className="h-6 w-6 text-white" />
           ) : (
-            <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+            <Menu className="h-6 w-6 text-white" />
           )}
         </button>
       </div>

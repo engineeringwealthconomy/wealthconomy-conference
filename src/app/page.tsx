@@ -883,7 +883,7 @@ export default function WbcPage() {
               <img
                 src="/wealthconomy-logo-new.png"
                 alt="Wealthconomy"
-                className="h-[30px] sm:h-[36px] w-auto object-contain brightness-0 invert"
+                className="h-[38px] sm:h-[44px] lg:h-[48px] w-auto object-contain brightness-0 invert"
               />
             </a>
 
