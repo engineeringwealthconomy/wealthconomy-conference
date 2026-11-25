@@ -373,23 +373,23 @@ export default function WbcPage() {
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-96px)] w-full max-w-[1380px] items-center px-6 pb-16 pt-2 sm:px-10 lg:px-12 lg:pb-20 lg:pt-4">
           <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(360px,0.75fr)] lg:gap-8 xl:gap-14">
             {/* Left Column */}
-            <Reveal delay={50} duration={800} className="max-w-[720px]">
-              <p className="mb-4 text-[12px] font-extrabold tracking-[0.26em] text-[#f8c860] uppercase sm:text-[13px]">
+            <Reveal delay={50} duration={800} className="max-w-[720px] text-center lg:text-left">
+              <p className="mb-4 text-center lg:text-left text-[12px] font-extrabold tracking-[0.26em] text-[#f8c860] uppercase sm:text-[13px]">
                 WEALTHCONOMY PRESENTS
               </p>
 
-              <h1 className="text-[48px] font-extrabold leading-[0.95] tracking-[-0.04em] text-white sm:text-[64px] md:text-[76px] lg:text-[84px] xl:text-[92px]">
+              <h1 className="text-center lg:text-left text-[48px] font-extrabold leading-[0.95] tracking-[-0.04em] text-white sm:text-[64px] md:text-[76px] lg:text-[84px] xl:text-[92px]">
                 Wealth Builders
                 <span className="block text-[#f8c860]">Conference</span>
               </h1>
 
-              <p className="mt-6 max-w-[550px] text-[16px] font-normal leading-[1.5] text-white/90 sm:text-[17px] md:text-[18px]">
+              <p className="mt-6 max-w-[550px] mx-auto lg:mx-0 text-center lg:text-left text-[16px] font-normal leading-[1.5] text-white/90 sm:text-[17px] md:text-[18px]">
                 A free day of practical money conversations on saving, investing
                 and growing your income, whatever you do for a living.
               </p>
 
               {/* Event Meta Badges */}
-              <div className="mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3">
+              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3">
                 <div className="inline-flex items-center rounded-full border border-[#f8c860] bg-[#0E4547] px-4.5 py-2 text-[12.5px] font-medium text-white sm:text-[13.5px]">
                   Saturday, 12 December 2026
                 </div>
@@ -402,7 +402,7 @@ export default function WbcPage() {
               </div>
 
               {/* CTAs */}
-              <div className="mt-8 flex flex-wrap items-center gap-3.5 sm:gap-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3.5 sm:gap-4">
                 <a
                   href={REGISTRATION_URL}
                   target="_blank"
@@ -666,16 +666,16 @@ export default function WbcPage() {
         <div className="mx-auto max-w-[1360px]">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
             {/* Left Column */}
-            <Reveal>
-              <p className="text-[12px] sm:text-[13px] font-extrabold tracking-[0.25em] text-[#0E4547] uppercase">
+            <Reveal className="text-center lg:text-left">
+              <p className="text-center lg:text-left text-[12px] sm:text-[13px] font-extrabold tracking-[0.25em] text-[#0E4547] uppercase">
                 EVENT DETAILS
               </p>
 
-              <h2 className="mt-3 text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[620px]">
+              <h2 className="mt-3 text-center lg:text-left text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[620px] mx-auto lg:mx-0">
                 One Saturday in Akure, set aside for your money
               </h2>
 
-              <div className="mt-10 space-y-6">
+              <div className="mt-10 space-y-6 max-w-[480px] mx-auto lg:mx-0 text-left">
                 {eventDetails.map((item, index) => (
                   <Reveal key={item.title} delay={index * 70}>
                     <div className="flex items-center gap-4.5 sm:gap-5">
@@ -836,19 +836,19 @@ export default function WbcPage() {
         <div className="mx-auto max-w-[1360px]">
           <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-14">
             {/* Left Content */}
-            <Reveal className="max-w-[760px]">
-              <h2 className="text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
+            <Reveal className="w-full max-w-[760px] text-center lg:text-left">
+              <h2 className="text-center lg:text-left text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
                 Save your free seat at the
                 <span className="block">Wealth Builders Conference</span>
               </h2>
 
-              <p className="mt-4 text-[15px] sm:text-[17px] font-bold text-[#0E4547]/90">
+              <p className="mt-4 text-center lg:text-left text-[15px] sm:text-[17px] font-bold text-[#0E4547]/90 mx-auto lg:mx-0">
                 Saturday, 12 December 2026, from 10am at The Growth Hub,
                 Alagbaka, Akure.
               </p>
 
               {/* Buttons */}
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
                 <a
                   href={REGISTRATION_URL}
                   target="_blank"
