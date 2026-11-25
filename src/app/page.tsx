@@ -1,6 +1,7 @@
 
 import { Reveal } from "@/components/reveal";
 import { FaqAccordion } from "@/components/faq-accordion";
+import { Navbar } from "@/components/navbar";
 
 function ConferenceQr({
   size = "normal",
@@ -310,7 +311,7 @@ const registrationSteps = [
   {
     step: "1",
     title: "Open the registration link",
-    description: `Go to ${DISPLAY_REGISTRATION_URL}, or scan the QR code on this page.`,
+    description: `Click the register button or scan the QR code on this page.`,
   },
   {
     step: "2",
@@ -333,9 +334,9 @@ export default function WbcPage() {
       {/* 1. HERO SECTION                                          */}
       {/* ======================================================== */}
       <section className="relative min-h-screen w-full overflow-hidden bg-[#0E4547] text-white">
-        {/* Background Gold Concentric Curves - exactly 2 circles behind the card as in design, strictly within right 30% */}
+        {/* Background Gold Concentric Curves - strictly on lg screens and up (hidden on mobile and smaller devices) */}
         <div
-          className="pointer-events-none absolute inset-0 z-0 select-none overflow-hidden"
+          className="pointer-events-none absolute inset-0 z-0 select-none overflow-hidden hidden lg:block"
           aria-hidden="true"
         >
           <div className="relative mx-auto h-full w-full max-w-[1380px]">
@@ -365,56 +366,8 @@ export default function WbcPage() {
           </div>
         </div>
 
-        {/* Header / Navigation Bar */}
-        <header className="relative z-20 mx-auto flex h-24 w-full max-w-[1380px] items-center justify-between px-6 sm:px-10 lg:px-12">
-          {/* Logo */}
-          <a
-            href="/wbc"
-            aria-label="Wealthconomy Home"
-            className="group flex items-center transition-transform hover:scale-105"
-          >
-            <div className="flex h-[40px] sm:h-[44px] items-center justify-center rounded-[6px] bg-white px-3.5 py-1.5 border border-white/20">
-              <img
-                src="/wealthconomy-logo-new.png"
-                alt="Wealthconomy"
-                className="h-[24px] sm:h-[28px] w-auto object-contain"
-              />
-            </div>
-          </a>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-[14px] font-medium text-white/95 transition-colors hover:text-[#f8c860] xl:text-[15px]"
-              >
-                {link.label}
-              </a>
-            ))}
-            <a
-              href={REGISTRATION_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-3 inline-flex items-center justify-center rounded-full bg-[#f8c860] px-7 py-3 text-[14px] font-bold text-[#0E4547] transition-all hover:bg-[#ffd768] active:scale-95"
-            >
-              Register free
-            </a>
-          </nav>
-
-          {/* Mobile Header Register Button */}
-          <div className="flex items-center gap-3 lg:hidden">
-            <a
-              href={REGISTRATION_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[#f8c860] px-5 py-2.5 text-[13px] font-bold text-[#0E4547]"
-            >
-              Register free
-            </a>
-          </div>
-        </header>
+        {/* Header / Navigation Bar with Desktop Nav & Mobile Menu */}
+        <Navbar navLinks={navLinks} registrationUrl={REGISTRATION_URL} />
 
         {/* Hero Section Content */}
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-96px)] w-full max-w-[1380px] items-center px-6 pb-16 pt-2 sm:px-10 lg:px-12 lg:pb-20 lg:pt-4">
