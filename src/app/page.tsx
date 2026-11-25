@@ -790,7 +790,7 @@ export default function WbcPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-[580px] text-[15px] sm:text-[16.5px] font-medium leading-[1.6] text-[#0E4547]/90">
-              A new way to think about wealth, and a community to grow with. Register today to be counted in and hear speaker announcements first.
+              A new way to think about wealth, and a community to grow with. Join our WhatsApp group to get practical money habits, savings tips, and exclusive content.
             </p>
 
             <div className="mt-8 flex justify-center">
@@ -800,7 +800,7 @@ export default function WbcPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-[#0E4547] px-8 py-3.5 text-[14px] sm:text-[15px] font-bold text-white transition-all hover:bg-[#145759] active:scale-95 shadow-none"
               >
-                Register & Join the Community
+                Join Our WhatsApp Community
               </a>
             </div>
           </Reveal>
