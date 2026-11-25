@@ -49,16 +49,14 @@ export function Navbar({ navLinks, registrationUrl }: NavbarProps) {
       <a
         href="/wbc"
         aria-label="Wealthconomy Home"
-        className="group flex items-center transition-transform hover:scale-105"
+        className="group flex items-center transition-opacity hover:opacity-90"
         onClick={handleLinkClick}
       >
-        <div className="flex h-[40px] sm:h-[44px] items-center justify-center rounded-[6px] bg-white px-3.5 py-1.5 border border-white/20">
-          <img
-            src="/wealthconomy-logo-new.png"
-            alt="Wealthconomy"
-            className="h-[24px] sm:h-[28px] w-auto object-contain"
-          />
-        </div>
+        <img
+          src="/wealthconomy-logo-new.png"
+          alt="Wealthconomy"
+          className="h-[30px] sm:h-[36px] w-auto object-contain brightness-0 invert"
+        />
       </a>
 
       {/* Desktop Navigation */}

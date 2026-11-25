@@ -878,15 +878,13 @@ export default function WbcPage() {
             <a
               href="/wbc"
               aria-label="Wealthconomy Home"
-              className="inline-block transition-transform hover:scale-105"
+              className="inline-block transition-opacity hover:opacity-90"
             >
-              <div className="flex h-[40px] sm:h-[44px] w-fit items-center justify-center rounded-[6px] bg-white px-3.5 py-1.5 border border-white/20">
-                <img
-                  src="/wealthconomy-logo-new.png"
-                  alt="Wealthconomy"
-                  className="h-[24px] sm:h-[28px] w-auto object-contain"
-                />
-              </div>
+              <img
+                src="/wealthconomy-logo-new.png"
+                alt="Wealthconomy"
+                className="h-[30px] sm:h-[36px] w-auto object-contain brightness-0 invert"
+              />
             </a>
 
             <p className="mt-5 max-w-[340px] text-[13px] leading-relaxed text-white/75">
