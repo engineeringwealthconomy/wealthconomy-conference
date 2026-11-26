@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "Wealth Builders Conference",
   description:
     "A free day of practical money conversations on saving, investing and growing your income.",
+  icons: {
+    icon: "/wealthconomy-logo-new.png",
+    shortcut: "/wealthconomy-logo-new.png",
+    apple: "/wealthconomy-logo-new.png",
+  },
 };
 
 export default function RootLayout({
