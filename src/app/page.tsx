@@ -390,17 +390,51 @@ export default function WbcPage() {
                 and growing your income, whatever you do for a living.
               </p>
 
-              {/* Event Meta Badges */}
-              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3">
-                <div className="inline-flex items-center rounded-full border border-[#f8c860] bg-[#0E4547] px-4.5 py-2 text-[12.5px] font-medium text-white sm:text-[13.5px]">
+              {/* Event Metadata Strip */}
+              <div className="mt-7 flex flex-wrap items-center justify-center lg:justify-start gap-x-3.5 gap-y-2 text-[13.5px] sm:text-[14.5px] text-white/90">
+                <span className="inline-flex items-center gap-1.5 font-medium">
+                  <svg
+                    className="h-4 w-4 text-[#f8c860] shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect width="18" height="18" x="3" y="4" rx="2" strokeWidth="2" />
+                    <line x1="16" x2="16" y1="2" y2="6" strokeWidth="2" />
+                    <line x1="8" x2="8" y1="2" y2="6" strokeWidth="2" />
+                    <line x1="3" x2="21" y1="10" y2="10" strokeWidth="2" />
+                  </svg>
                   Saturday, 12 December 2026
-                </div>
-                <div className="inline-flex items-center rounded-full border border-[#f8c860] bg-[#0E4547] px-4.5 py-2 text-[12.5px] font-medium text-white sm:text-[13.5px]">
+                </span>
+                <span className="hidden sm:inline text-white/30">•</span>
+                <span className="inline-flex items-center gap-1.5 font-medium">
+                  <svg
+                    className="h-4 w-4 text-[#f8c860] shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                    <polyline points="12 6 12 12 16 14" strokeWidth="2" />
+                  </svg>
                   Starts at 10am
-                </div>
-                <div className="inline-flex items-center rounded-full border border-[#f8c860] bg-[#0E4547] px-4.5 py-2 text-[12.5px] font-medium text-white sm:text-[13.5px]">
-                  The Growth Hub, Alagbaka, Akure
-                </div>
+                </span>
+                <span className="hidden sm:inline text-white/30">•</span>
+                <span className="inline-flex items-center gap-1.5 font-medium">
+                  <svg
+                    className="h-4 w-4 text-[#f8c860] shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                      strokeWidth="2"
+                    />
+                    <circle cx="12" cy="10" r="3" strokeWidth="2" />
+                  </svg>
+                  The Growth Hub, Akure
+                </span>
               </div>
 
               {/* CTAs */}
