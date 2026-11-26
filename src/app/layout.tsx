@@ -13,9 +13,12 @@ export const metadata: Metadata = {
   description:
     "A free day of practical money conversations on saving, investing and growing your income.",
   icons: {
-    icon: "/wealthconomy-logo-new.png",
-    shortcut: "/wealthconomy-logo-new.png",
-    apple: "/wealthconomy-logo-new.png",
+    icon: [
+      { url: "/logo1.png" },
+      { url: "/icon.png" },
+    ],
+    shortcut: "/logo1.png",
+    apple: "/logo1.png",
   },
 };
 
