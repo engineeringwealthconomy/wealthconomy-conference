@@ -918,10 +918,10 @@ export default function WbcPage() {
             </p>
             <p>
               <a
-                href="mailto:wealthconomysavers@gmail.com"
+                href="mailto:hello@wealthconomy.org"
                 className="transition-colors hover:text-white"
               >
-                wealthconomysavers@gmail.com
+                hello@wealthconomy.org
               </a>
             </p>
             <p>
