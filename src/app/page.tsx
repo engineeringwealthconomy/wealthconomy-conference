@@ -832,7 +832,7 @@ export default function WbcPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-[580px] text-[15px] sm:text-[16.5px] font-medium leading-[1.6] text-[#0E4547]/90">
-              A new way to think about wealth, and a community to grow with. Join our WhatsApp group to get practical money habits, savings tips, and exclusive content.
+              A new way to think about wealth and a community to grow with. Join our WhatsApp group to get practical money habits, savings tips, and exclusive content.
             </p>
 
             <div className="mt-8 flex justify-center">
