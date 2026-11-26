@@ -12,8 +12,8 @@ function ConferenceQr({
 }) {
   const dimensionClass =
     size === "large"
-      ? "h-[160px] w-[160px] sm:h-[180px] sm:w-[180px]"
-      : "h-[136px] w-[136px] sm:h-[148px] sm:w-[148px]";
+      ? "h-[150px] w-[150px] sm:h-[168px] sm:w-[168px]"
+      : "h-[116px] w-[116px] sm:h-[126px] sm:w-[126px]";
 
   return (
     <svg
@@ -372,26 +372,26 @@ export default function WbcPage() {
         <Navbar navLinks={navLinks} registrationUrl={REGISTRATION_URL} />
 
         {/* Hero Section Content */}
-        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-96px)] w-full max-w-[1380px] items-center px-6 pb-16 pt-2 sm:px-10 lg:px-12 lg:pb-20 lg:pt-4">
-          <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(360px,0.75fr)] lg:gap-8 xl:gap-14">
+        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-96px)] w-full max-w-[1380px] items-center px-6 pb-16 pt-2 sm:px-10 lg:px-12 lg:pb-16 lg:pt-2">
+          <div className="grid w-full grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(310px,0.7fr)] xl:grid-cols-[minmax(0,1.35fr)_minmax(340px,0.75fr)] lg:gap-8 xl:gap-14">
             {/* Left Column */}
             <Reveal delay={50} duration={800} className="max-w-[720px] text-center lg:text-left">
-              <p className="mb-4 text-center lg:text-left text-[12px] font-extrabold tracking-[0.26em] text-[#f8c860] uppercase sm:text-[13px]">
+              <p className="mb-3 sm:mb-4 text-center lg:text-left text-[11.5px] font-extrabold tracking-[0.26em] text-[#f8c860] uppercase sm:text-[12.5px]">
                 WEALTHCONOMY PRESENTS
               </p>
 
-              <h1 className="text-center lg:text-left text-[48px] font-extrabold leading-[0.95] tracking-[-0.04em] text-white sm:text-[64px] md:text-[76px] lg:text-[84px] xl:text-[92px]">
+              <h1 className="text-center lg:text-left text-[44px] font-extrabold leading-[0.98] tracking-[-0.04em] text-white sm:text-[56px] md:text-[64px] lg:text-[66px] xl:text-[78px]">
                 Wealth Builders
                 <span className="block text-[#f8c860]">Conference</span>
               </h1>
 
-              <p className="mt-6 max-w-[550px] mx-auto lg:mx-0 text-center lg:text-left text-[16px] font-normal leading-[1.5] text-white/90 sm:text-[17px] md:text-[18px]">
+              <p className="mt-5 sm:mt-6 max-w-[530px] mx-auto lg:mx-0 text-center lg:text-left text-[15px] font-normal leading-[1.5] text-white/90 sm:text-[16.5px] md:text-[17.5px]">
                 A free day of practical money conversations on saving, investing
                 and growing your income, whatever you do for a living.
               </p>
 
               {/* Event Metadata Strip */}
-              <div className="mt-7 flex flex-wrap items-center justify-center lg:justify-start gap-x-3.5 gap-y-2 text-[13.5px] sm:text-[14.5px] text-white/90">
+              <div className="mt-6 sm:mt-7 flex flex-wrap items-center justify-center lg:justify-start gap-x-3.5 gap-y-2 text-[13px] sm:text-[14px] text-white/90">
                 <span className="inline-flex items-center gap-1.5 font-medium">
                   <svg
                     className="h-4 w-4 text-[#f8c860] shrink-0"
@@ -438,18 +438,18 @@ export default function WbcPage() {
               </div>
 
               {/* CTAs */}
-              <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3.5 sm:gap-4">
+              <div className="mt-7 sm:mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-3.5">
                 <a
                   href={REGISTRATION_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-[#f8c860] px-8 py-3.5 text-[14px] font-bold text-[#0E4547] transition-all hover:bg-[#ffd768] active:scale-95 sm:text-[15px]"
+                  className="inline-flex items-center justify-center rounded-full bg-[#f8c860] px-7 sm:px-8 py-3 sm:py-3.5 text-[14px] font-bold text-[#0E4547] transition-all hover:bg-[#ffd768] active:scale-95 sm:text-[15px]"
                 >
                   Register free
                 </a>
                 <a
                   href="#speakers"
-                  className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-8 py-3.5 text-[14px] font-bold text-white transition-all hover:bg-white/10 active:scale-95 sm:text-[15px]"
+                  className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-7 sm:px-8 py-3 sm:py-3.5 text-[14px] font-bold text-white transition-all hover:bg-white/10 active:scale-95 sm:text-[15px]"
                 >
                   Meet the speakers
                 </a>
@@ -457,16 +457,16 @@ export default function WbcPage() {
             </Reveal>
 
             {/* Right Column: Registration Card */}
-            <Reveal delay={200} duration={800} className="relative mx-auto w-full max-w-[390px] pt-4 lg:mr-0 lg:pt-0">
+            <Reveal delay={200} duration={800} className="relative mx-auto w-full max-w-[350px] lg:max-w-[315px] xl:max-w-[345px] pt-4 lg:mr-0 lg:pt-0">
               {/* Circular FREE Registration Badge */}
               <div
-                className="absolute -left-5 -top-5 z-20 flex h-[112px] w-[112px] -rotate-12 flex-col items-center justify-center rounded-full bg-[#f8c860] text-[#0E4547] sm:-left-6 sm:-top-6 sm:h-[118px] sm:w-[118px]"
+                className="absolute -left-3.5 -top-3.5 z-20 flex h-[90px] w-[90px] sm:h-[98px] sm:w-[98px] lg:h-[88px] lg:w-[88px] xl:h-[96px] xl:w-[96px] -rotate-12 flex-col items-center justify-center rounded-full bg-[#f8c860] text-[#0E4547] shadow-lg"
                 aria-label="Free registration"
               >
-                <span className="text-[32px] font-black leading-[0.88] tracking-tight sm:text-[34px]">
+                <span className="text-[25px] sm:text-[27px] lg:text-[24px] xl:text-[26px] font-black leading-[0.88] tracking-tight">
                   FREE
                 </span>
-                <span className="mt-0.5 text-[10.5px] font-bold tracking-tight sm:text-[11.5px]">
+                <span className="mt-0.5 text-[9px] sm:text-[10px] lg:text-[8.5px] xl:text-[9.5px] font-bold tracking-tight">
                   registration
                 </span>
               </div>
@@ -474,31 +474,31 @@ export default function WbcPage() {
               {/* Main Date & QR Card */}
               <div
                 id="register"
-                className="relative rounded-2xl border border-[#0E4547]/15 bg-[#FAF8F2] px-8 pb-9 pt-10 text-center text-[#0E4547] sm:px-9 sm:pb-10 sm:pt-11"
+                className="relative rounded-2xl border border-[#0E4547]/15 bg-[#FAF8F2] px-6 pb-7 pt-7 sm:px-7 sm:pb-8 sm:pt-8 lg:px-5 lg:pb-6 lg:pt-7 xl:px-7 xl:pb-8 xl:pt-8 text-center text-[#0E4547] shadow-xl"
               >
-                <p className="text-[13.5px] font-bold tracking-[0.26em] text-[#0E4547]">
+                <p className="text-[12px] lg:text-[11.5px] xl:text-[12.5px] font-bold tracking-[0.24em] text-[#0E4547]">
                   SATURDAY
                 </p>
 
-                <p className="my-0.5 text-[108px] font-black leading-[0.85] tracking-[-0.06em] text-[#0E4547] sm:text-[118px]">
+                <p className="my-0.5 text-[84px] sm:text-[94px] lg:text-[76px] xl:text-[88px] font-black leading-[0.85] tracking-[-0.06em] text-[#0E4547]">
                   12
                 </p>
 
-                <p className="text-[21px] font-extrabold text-[#0E4547] sm:text-[23px]">
+                <p className="text-[18px] sm:text-[20px] lg:text-[17px] xl:text-[19px] font-extrabold text-[#0E4547]">
                   December 2026
                 </p>
 
-                <div className="mt-3.5 inline-flex items-center rounded-full bg-[#0E4547] px-5 py-1.5 text-[11.5px] font-bold text-white">
+                <div className="mt-2.5 sm:mt-3 inline-flex items-center rounded-full bg-[#0E4547] px-4 py-1 text-[11px] font-bold text-white">
                   Starts at 10am
                 </div>
 
-                <div className="my-4.5 w-full border-t border-[#0E4547]/15" />
+                <div className="my-3 sm:my-3.5 w-full border-t border-[#0E4547]/15" />
 
-                <p className="text-[12.5px] font-semibold text-[#0E4547]/80">
+                <p className="text-[11.5px] lg:text-[11px] xl:text-[12px] font-semibold text-[#0E4547]/80">
                   The Growth Hub, Alagbaka, Akure
                 </p>
 
-                <div className="mx-auto mt-4.5 flex items-center justify-center">
+                <div className="mx-auto mt-3 sm:mt-3.5 flex items-center justify-center">
                   <ConferenceQr />
                 </div>
 
@@ -506,7 +506,7 @@ export default function WbcPage() {
                   href={REGISTRATION_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 block text-[10.5px] font-extrabold tracking-[0.24em] text-[#0E4547] hover:underline"
+                  className="mt-3 block text-[10px] font-extrabold tracking-[0.22em] text-[#0E4547] hover:underline"
                 >
                   SCAN TO REGISTER
                 </a>
@@ -529,7 +529,7 @@ export default function WbcPage() {
               WHO SHOULD ATTEND
             </p>
 
-            <h2 className="mt-3 text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[800px] mx-auto">
+            <h2 className="mt-3 text-center text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#112324] max-w-[800px] mx-auto">
               Built for people who earn in different ways
             </h2>
 
@@ -591,7 +591,7 @@ export default function WbcPage() {
               SPEAKERS
             </p>
 
-            <h2 className="mt-3 text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[850px] mx-auto">
+            <h2 className="mt-3 text-center text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#112324] max-w-[850px] mx-auto">
               Learn from people building wealth in Akure
             </h2>
 
@@ -660,7 +660,7 @@ export default function WbcPage() {
               WHAT YOU WILL LEARN
             </p>
 
-            <h2 className="mt-3 text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-white max-w-[850px] mx-auto">
+            <h2 className="mt-3 text-center text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-white max-w-[850px] mx-auto">
               Three money conversations you should not miss
             </h2>
           </Reveal>
@@ -713,7 +713,7 @@ export default function WbcPage() {
                 EVENT DETAILS
               </p>
 
-              <h2 className="mt-3 text-center lg:text-left text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[620px] mx-auto lg:mx-0">
+              <h2 className="mt-3 text-center lg:text-left text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#112324] max-w-[620px] mx-auto lg:mx-0">
                 One Saturday in Akure, set aside for your money
               </h2>
 
@@ -778,7 +778,7 @@ export default function WbcPage() {
               HOW TO ATTEND
             </p>
 
-            <h2 className="mt-3 text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#112324] max-w-[800px] mx-auto">
+            <h2 className="mt-3 text-center text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#112324] max-w-[800px] mx-auto">
               Register in three easy steps
             </h2>
           </Reveal>
@@ -786,7 +786,7 @@ export default function WbcPage() {
           <div className="mt-14 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             {registrationSteps.map((step, index) => (
               <Reveal key={step.step} delay={index * 110}>
-                <div className="group relative flex h-full flex-col justify-start rounded-2xl border border-[#0E4547]/15 bg-white p-7 sm:p-8 transition-transform duration-200 hover:-translate-y-0.5">
+                <div className="group relative flex h-full flex-col justify-start rounded-2xl  bg-white p-7 sm:p-8 transition-transform duration-200 hover:-translate-y-0.5">
                   {/* Number Badge */}
                   <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0E4547] text-[18px] font-extrabold text-[#f8c860]">
                     {step.step}
@@ -826,7 +826,7 @@ export default function WbcPage() {
       >
         <div className="mx-auto max-w-[760px] text-center">
           <Reveal>
-            <h2 className="text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
+            <h2 className="text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#0E4547]">
               Join the Wealthconomy
               <span className="block">community.</span>
             </h2>
@@ -858,7 +858,7 @@ export default function WbcPage() {
       >
         <div className="mx-auto max-w-[800px]">
           <Reveal>
-            <h2 className="text-center text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
+            <h2 className="text-center text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#0E4547]">
               Frequently asked questions
             </h2>
           </Reveal>
@@ -879,7 +879,7 @@ export default function WbcPage() {
           <div className="flex flex-col items-center justify-between gap-10 lg:flex-row lg:gap-14">
             {/* Left Content */}
             <Reveal className="w-full max-w-[760px] text-center lg:text-left">
-              <h2 className="text-center lg:text-left text-[34px] sm:text-[44px] md:text-[50px] lg:text-[56px] font-extrabold leading-[1.08] tracking-[-0.035em] text-[#0E4547]">
+              <h2 className="text-center lg:text-left text-[30px] sm:text-[36px] md:text-[40px] lg:text-[44px] font-extrabold leading-[1.12] tracking-[-0.03em] text-[#0E4547]">
                 Save your free seat at the
                 <span className="block">Wealth Builders Conference</span>
               </h2>
