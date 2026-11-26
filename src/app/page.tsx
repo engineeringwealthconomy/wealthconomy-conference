@@ -139,12 +139,14 @@ const speakers = [
   {
     name: "Favour Olatunde",
     role: "Founder and CEO, Wealthconomy",
+    image: "/speaker2.jpeg",
     isMystery: false,
     cardBg: "bg-[#f8c860]",
   },
   {
     name: "Olatunde Victor Adeoluwa",
     role: "Founder and CEO, Salesplat and The Growth Hub",
+    image: "/speaker1.JPEG",
     isMystery: false,
     cardBg: "bg-[#f8c860]",
   },
@@ -572,7 +574,13 @@ export default function WbcPage() {
                   <div
                     className={`relative flex h-[260px] sm:h-[280px] w-full items-center justify-center overflow-hidden rounded-xl ${speaker.cardBg}`}
                   >
-                    {speaker.isMystery ? (
+                    {speaker.image ? (
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                      />
+                    ) : speaker.isMystery ? (
                       <span className="select-none text-[80px] sm:text-[92px] font-black leading-none text-[#f8c860]">
                         ?
                       </span>
@@ -918,10 +926,10 @@ export default function WbcPage() {
             </p>
             <p>
               <a
-                href="tel:+2347066295183"
+                href="tel:+2347014085119"
                 className="transition-colors hover:text-white"
               >
-                +234 706 629 5183
+                +234 701 408 5119
               </a>
             </p>
           </div>
