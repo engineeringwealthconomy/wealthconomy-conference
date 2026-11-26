@@ -47,7 +47,9 @@ export function Navbar({ navLinks, registrationUrl }: NavbarProps) {
     <header className="relative z-30 mx-auto flex h-24 w-full max-w-[1380px] items-center justify-between px-6 sm:px-10 lg:px-12">
       {/* Brand Logo */}
       <a
-        href="/wbc"
+        href="https://wealthconomy.org"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Wealthconomy Home"
         className="group flex items-center transition-opacity hover:opacity-90"
         onClick={handleLinkClick}

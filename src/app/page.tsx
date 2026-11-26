@@ -918,7 +918,9 @@ export default function WbcPage() {
           {/* Left Brand Col */}
           <div>
             <a
-              href="/wbc"
+              href="https://wealthconomy.org"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Wealthconomy Home"
               className="inline-block transition-opacity hover:opacity-90"
             >
@@ -947,7 +949,7 @@ export default function WbcPage() {
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-white"
               >
-                wealthconomy.org
+                Visit wealthconomy.org
               </a>
             </p>
             <p>
